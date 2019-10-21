@@ -4,8 +4,10 @@
   "description": "",
   "main": "players-schema.js",
   "scripts": {
-    "test": "jest --verbose",
-    "test-watch": "jest --watchAll --verbose"
+    "test": "jest --verbose --coverage",
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json",
+    "lint": "eslint './**/*.js' --fix",
+    "start": "node index.js"
   },
   "jest": {
     "testEnvironment": "node"
